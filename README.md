@@ -27,9 +27,10 @@ use Defr\QRPlatba\QRPlatba;
 $qrPlatba = new QRPlatba();
 
 $qrPlatba->setAccount("12-3456789012/0100")
+	->setAmount(100)
     ->setVariableSymbol("2016001234")
     ->setMessage("Toto je první QR platba.")
-    ->setSpecificSymbol("0308")
+    ->setConstantSymbol("0308")
     ->setSpecificSymbol("1234")
     ->setDueDate(new \DateTime());
 
